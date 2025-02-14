@@ -1,11 +1,91 @@
-INSERT INTO dim_customers (full_name, email, phone, city, country) 
-VALUES ('John Doe', 'john@example.com', '123-456-7890', 'New York', 'USA');
+-- dim_customers
+INSERT INTO dim_customers (full_name, email, phone, city, country) VALUES 
+('John Doe', 'john@example.com', '123-456-7890', 'New York', 'USA'),
+('Jane Smith', 'jane@example.com', '098-765-4321', 'Los Angeles', 'USA'),
+('Alice Johnson', 'alice@example.com', '555-123-4567', 'Chicago', 'USA'),
+('Bob Brown', 'bob@example.com', '444-555-6666', 'Houston', 'USA'),
+('Charlie Davis', 'charlie@example.com', '333-444-5555', 'Phoenix', 'USA'),
+('David Evans', 'david@example.com', '222-333-4444', 'Philadelphia', 'USA'),
+('Eva Green', 'eva@example.com', '111-222-3333', 'San Antonio', 'USA'),
+('Frank Harris', 'frank@example.com', '999-888-7777', 'San Diego', 'USA'),
+('Grace Lee', 'grace@example.com', '888-777-6666', 'Dallas', 'USA'),
+('Hannah Martin', 'hannah@example.com', '777-666-5555', 'San Jose', 'USA'),
+('Ivy Nelson', 'ivy@example.com', '666-555-4444', 'Austin', 'USA'),
+('Jack Oliver', 'jack@example.com', '555-444-3333', 'Jacksonville', 'USA'),
+('Karen Perez', 'karen@example.com', '444-333-2222', 'Fort Worth', 'USA'),
+('Leo Quinn', 'leo@example.com', '333-222-1111', 'Columbus', 'USA'),
+('Mia Roberts', 'mia@example.com', '222-111-0000', 'Charlotte', 'USA'),
+('Noah Scott', 'noah@example.com', '111-000-9999', 'San Francisco', 'USA'),
+('Olivia Turner', 'olivia@example.com', '000-999-8888', 'Indianapolis', 'USA'),
+('Paul Walker', 'paul@example.com', '999-888-7776', 'Seattle', 'USA'),
+('Quinn Young', 'quinn@example.com', '888-777-6665', 'Denver', 'USA'),
+('Ryan Zimmerman', 'ryan@example.com', '777-666-5554', 'Washington', 'USA');
 
-INSERT INTO dim_products (product_name, category, brand, price) 
-VALUES ('Laptop', 'Electronics', 'Dell', 999.99);
+-- dim_products
+INSERT INTO dim_products (product_name, category, brand, price) VALUES 
+('Laptop', 'Electronics', 'Dell', 999.99),
+('Smartphone', 'Electronics', 'Apple', 799.99),
+('Tablet', 'Electronics', 'Samsung', 499.99),
+('Headphones', 'Electronics', 'Sony', 199.99),
+('Smartwatch', 'Electronics', 'Garmin', 299.99),
+('Camera', 'Electronics', 'Canon', 549.99),
+('Printer', 'Electronics', 'HP', 129.99),
+('Monitor', 'Electronics', 'LG', 199.99),
+('Keyboard', 'Electronics', 'Logitech', 49.99),
+('Mouse', 'Electronics', 'Microsoft', 29.99),
+('TV', 'Electronics', 'Samsung', 1199.99),
+('Speaker', 'Electronics', 'Bose', 399.99),
+('Router', 'Electronics', 'Netgear', 89.99),
+('Hard Drive', 'Electronics', 'Seagate', 79.99),
+('SSD', 'Electronics', 'Samsung', 139.99),
+('RAM', 'Electronics', 'Corsair', 69.99),
+('GPU', 'Electronics', 'NVIDIA', 499.99),
+('Motherboard', 'Electronics', 'ASUS', 199.99),
+('Power Supply', 'Electronics', 'EVGA', 99.99),
+('Cooling System', 'Electronics', 'Cooler Master', 59.99);
 
-INSERT INTO dim_stores (store_name, location, manager) 
-VALUES ('Downtown Store', 'New York', 'Jane Smith');
+-- dim_stores
+INSERT INTO dim_stores (store_name, location, manager) VALUES 
+('Downtown Store', 'New York', 'Jane Smith'),
+('Uptown Store', 'Los Angeles', 'John Doe'),
+('Suburban Store', 'Chicago', 'Alice Johnson'),
+('City Center Store', 'Houston', 'Bob Brown'),
+('Mall Store', 'Phoenix', 'Charlie Davis'),
+('Outlet Store', 'Philadelphia', 'David Evans'),
+('Warehouse Store', 'San Antonio', 'Eva Green'),
+('Express Store', 'San Diego', 'Frank Harris'),
+('Flagship Store', 'Dallas', 'Grace Lee'),
+('Corner Store', 'San Jose', 'Hannah Martin'),
+('Neighborhood Store', 'Austin', 'Ivy Nelson'),
+('Mega Store', 'Jacksonville', 'Jack Oliver'),
+('Convenience Store', 'Fort Worth', 'Karen Perez'),
+('Hypermarket', 'Columbus', 'Leo Quinn'),
+('Department Store', 'Charlotte', 'Mia Roberts'),
+('Boutique Store', 'San Francisco', 'Noah Scott'),
+('Chain Store', 'Indianapolis', 'Olivia Turner'),
+('Pop-up Store', 'Seattle', 'Paul Walker'),
+('Specialty Store', 'Denver', 'Quinn Young'),
+('Discount Store', 'Washington', 'Ryan Zimmerman');
 
-INSERT INTO dim_date (date, year, quarter, month, day, weekday) 
-VALUES ('2025-02-13', 2025, 1, 2, 13, 'Thursday');
+-- dim_date
+INSERT INTO dim_date (date, year, quarter, month, day, weekday) VALUES 
+('2025-01-01', 2025, 1, 1, 1, 'Wednesday'),
+('2025-01-02', 2025, 1, 1, 2, 'Thursday'),
+('2025-01-03', 2025, 1, 1, 3, 'Friday'),
+('2025-01-04', 2025, 1, 1, 4, 'Saturday'),
+('2025-01-05', 2025, 1, 1, 5, 'Sunday'),
+('2025-01-06', 2025, 1, 1, 6, 'Monday'),
+('2025-01-07', 2025, 1, 1, 7, 'Tuesday'),
+('2025-01-08', 2025, 1, 1, 8, 'Wednesday'),
+('2025-01-09', 2025, 1, 1, 9, 'Thursday'),
+('2025-01-10', 2025, 1, 1, 10, 'Friday'),
+('2025-01-11', 2025, 1, 1, 11, 'Saturday'),
+('2025-01-12', 2025, 1, 1, 12, 'Sunday'),
+('2025-01-13', 2025, 1, 1, 13, 'Monday'),
+('2025-01-14', 2025, 1, 1, 14, 'Tuesday'),
+('2025-01-15', 2025, 1, 1, 15, 'Wednesday'),
+('2025-01-16', 2025, 1, 1, 16, 'Thursday'),
+('2025-01-17', 2025, 1, 1, 17, 'Friday'),
+('2025-01-18', 2025, 1, 1, 18, 'Saturday'),
+('2025-01-19', 2025, 1, 1, 19, 'Sunday'),
+('2025-01-20', 2025, 1, 1, 20, 'Monday');
